@@ -24,7 +24,7 @@ export class WishingStone extends Component {
     let grantedWish = this.manifestWish();
 
     return (
-      <div>
+      <div className='WishingStone'>
         <h1>What do you desire?...</h1>
         <WishForm grantWish={this.grantWish} />
         <div>

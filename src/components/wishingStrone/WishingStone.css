@@ -1,0 +1,8 @@
+.WishingStone{
+    width: 600px;
+    max-width: 96.7%;
+    height:97%;
+    border:1px solid white;
+    overflow: hidden;
+    margin: 0 auto;
+}
