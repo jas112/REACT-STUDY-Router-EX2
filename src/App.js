@@ -1,23 +1,19 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import WishingStone from './components/wishingStrone/WishingStone';
 import Wish from './components/wish/Wish';
 import './App.css';
 
 function App() {
   return (
-    <>
-      <Router>
+
         <div className="App">
           <div className='container'>
-            <Routes>
-              <Route path='/wishingStone' element={<WishingStone />} />
-              <Route path='/wish/:wish' element={<Wish wish='egg' />} />
-              <Route path='/wishGetter/:wish' element={<Wish />} />
-            </Routes>
+              <Route path='/wishingStone' render={() => <WishingStone />} />
+              <Route path='/wish/:wish' render={() => <Wish wish='egg' />} />
+              <Route path='/wishGetter/:wish' render={() => <Wish />} />
           </div>
         </div>
-      </Router>
-    </>
 
   );
 }
