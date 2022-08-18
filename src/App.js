@@ -12,7 +12,7 @@ function App() {
             <Routes>
               <Route path='/wishingStone' element={<WishingStone />} />
               <Route path='/wish/:wish' element={<Wish wish='egg' />} />
-              <Route path='/wishGetter/:wish' element={routeProps => <Wish wish={routeProps.match.params.wish} />} />
+              <Route path='/wishGetter/:wish' element={<Wish />} />
             </Routes>
           </div>
         </div>
