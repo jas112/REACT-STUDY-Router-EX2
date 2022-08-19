@@ -15,7 +15,7 @@ function App() {
             <Switch>
               <Route exact path='/' render={() => <Home />} />
               <Route exact path='/wishingStone' render={() => <WishingStone />} />
-              <Route exact path='/wish/:wish' render={() => <Wish wish='egg' />} />
+              <Route exact path='/wish/:wish' render={routeProps => <Wish wish={routeProps.match.params.wish} />} />
               {/* <Route exact path='/wishGetter/:wish' render={() => <Wish />} /> */}
             </Switch>
           </div>
