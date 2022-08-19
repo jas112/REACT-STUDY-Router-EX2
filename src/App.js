@@ -4,6 +4,7 @@ import Header from './components/header/Header';
 import Home from './components/home/Home';
 import WishingStone from './components/wishingStrone/WishingStone';
 import Wish from './components/wish/Wish';
+import DualWish from './components/dualWish/DualWish';
 import './App.css';
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
             <Switch>
               <Route exact path='/' render={() => <Home />} />
               <Route exact path='/wishingStone' render={() => <WishingStone />} />
-              <Route exact path='/wish/:wish' render={routeProps => <Wish wish={routeProps.match.params.wish} />} />
+              <Route exact path='/wish/:wish' render={routeProps => <Wish {...routeProps} />} />
+              <Route exact path='/dualWish/firstWish/:wish1/secondWish/:wish2' render={routeProps => <DualWish {...routeProps} />} />
               {/* <Route exact path='/wishGetter/:wish' render={() => <Wish />} /> */}
             </Switch>
           </div>
