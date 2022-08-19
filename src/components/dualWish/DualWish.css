@@ -11,8 +11,9 @@
     height: 240px;
     max-height: 40.9%;
     border-radius: 500px;
+    box-shadow: 0px 0px 15px #32cd32;
     overflow: hidden;
-    margin:0 auto;
+    margin:30px auto;
 }
 
 .DualWish-display:before{

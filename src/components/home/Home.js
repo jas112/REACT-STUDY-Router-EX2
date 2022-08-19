@@ -4,7 +4,7 @@ import './Home.css';
 class Home extends Component {
   render() {
     return (
-      <div>Welcome to the Wishing Stone...</div>
+      <div className='Home'>The Wishing Stone Awaits...</div>
     )
   }
 }

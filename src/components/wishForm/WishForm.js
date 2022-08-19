@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import './WishForm.css';
 
 class WishForm extends Component {
@@ -32,7 +33,8 @@ class WishForm extends Component {
         <h1>Wishing for... {this.state.wish}</h1>
         <form onSubmit={this.handleSubmit}>
             <input type='text' id='wish' name='wish' value={this.state.wish} onChange={this.handleChange} className='WishForm-wishInput' placeholder='Enter your desire here...' />
-            <button type='submit' className='WishForm-button' >GRANT MY WISH!!!</button>
+            {/* <button type='submit' className='WishForm-button' >GRANT MY WISH!!!</button> */}
+            <Link className='WishForm-link' to={`/wish/${this.state.wish}`}>CLICK TO GRANT WISH</Link>
         </form>
       </div>
     )

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import SingleWish from '../singleWish/SingleWish';
 import './DualWish.css';
 
 class DualWish extends Component {

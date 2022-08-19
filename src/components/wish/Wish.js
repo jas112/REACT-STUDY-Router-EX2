@@ -11,7 +11,7 @@ class Wish extends Component {
 
     return (
       <div className='Wish'>
-        <h1>The object of your desire... {wish}</h1>
+        <h1 className='Wish-msg'>The object of your desire... {wish}</h1>
         <div className='Wish-display'>
           <img className='Wish-img' src={targetUrl} alt={wish} />
         </div>

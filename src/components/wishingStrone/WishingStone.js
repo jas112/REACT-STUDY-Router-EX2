@@ -16,19 +16,20 @@ export class WishingStone extends Component {
 
     manifestWish(){
         return (
-            <Wish wish={this.state.wish} />
+            // <Wish wish={this.state.wish} />
+            <h1>GrantedWish</h1>
         );
     }
   render() {
 
-    let grantedWish = this.manifestWish();
+    // let grantedWish = this.manifestWish();
 
     return (
       <div className='WishingStone'>
-        <h1>What do you desire?...</h1>
+        <h1 className='WishingStone-msg'>What do you desire?...</h1>
         <WishForm grantWish={this.grantWish} />
         <div>
-            {grantedWish}
+            {/* {grantedWish} */}
         </div>
       </div>
     )

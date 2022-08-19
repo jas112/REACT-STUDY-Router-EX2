@@ -1,0 +1,41 @@
+.WishForm{
+    color: #32cd32;
+}
+
+.WishForm-wishInput{
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+    width: 270px;
+    max-width: 100%;
+    background-color: transparent;
+    color:#32cd32;
+}
+
+.WishForm-wishInput:focus{
+ border: none;
+}
+
+.WishForm-link {
+    display:block;
+    margin: 12px auto;
+    width: 270px;
+    border: 2px solid #32cd32;
+    border-radius: 13px;;
+    padding: 2px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    color:#32cd32;
+    -webkit-text-fill-color: #32cd3230;
+    -webkit-text-stroke-color: #32cd32;
+    -webkit-text-stroke: 1px;
+}
+
+.WishForm-link:hover {
+    border: 2px solid #ff2f00;
+    color:#ff2f00;
+    -webkit-text-stroke: #ff2f00;
+    -webkit-text-fill-color: #ff2f007e;
+    -webkit-text-stroke: 1px;
+}
