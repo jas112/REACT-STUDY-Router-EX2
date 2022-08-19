@@ -18,12 +18,15 @@ class WishForm extends Component {
 
     handleSubmit(evt){
         evt.preventDefault();
-        if(this.state.wish === ''){
-            alert('Please enter your wish...');
+        let isNotValid = (this.state.wish === '') || (/\d/.test(this.state.wish));
+        if(isNotValid){
+            alert('Please enter valid wish...');
         }else{
             let newWish = {wish: this.state.wish}
+            let wishValue = this.state.wish;
             this.props.grantWish(newWish);
             this.setState({wish: ''});
+            this.props.history.push(`/wish/${wishValue}`);
         }
     }
 
@@ -33,8 +36,8 @@ class WishForm extends Component {
         <h1>Wishing for... {this.state.wish}</h1>
         <form onSubmit={this.handleSubmit}>
             <input type='text' id='wish' name='wish' value={this.state.wish} onChange={this.handleChange} className='WishForm-wishInput' placeholder='Enter your desire here...' />
-            {/* <button type='submit' className='WishForm-button' >GRANT MY WISH!!!</button> */}
-            <Link className='WishForm-link' to={`/wish/${this.state.wish}`}>CLICK TO GRANT WISH</Link>
+            <button type='submit' className='WishForm-btn' >CLICK TO GRANT WISH</button>
+            {/* <Link className='WishForm-link' to={`/wish/${this.state.wish}`}>CLICK TO GRANT WISH</Link> */}
         </form>
       </div>
     )

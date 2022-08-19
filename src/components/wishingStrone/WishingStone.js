@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Wish from '../wish/Wish';
+// import Wish from '../wish/Wish';
 import WishForm from '../wishForm/WishForm';
 import './WishingStone.css';
 
@@ -27,7 +27,7 @@ export class WishingStone extends Component {
     return (
       <div className='WishingStone'>
         <h1 className='WishingStone-msg'>What do you desire?...</h1>
-        <WishForm grantWish={this.grantWish} />
+        <WishForm grantWish={this.grantWish} {...this.props} />
         <div>
             {/* {grantedWish} */}
         </div>

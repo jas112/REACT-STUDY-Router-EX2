@@ -15,7 +15,7 @@ function App() {
           <div className='container'>
             <Switch>
               <Route exact path='/' render={() => <Home />} />
-              <Route exact path='/wishingStone' render={() => <WishingStone />} />
+              <Route exact path='/wishingStone' render={routeProps => <WishingStone {...routeProps} />} />
               <Route exact path='/wish/:wish' render={routeProps => <Wish {...routeProps} />} />
               <Route exact path='/dualWish/firstWish/:wish1/secondWish/:wish2' render={routeProps => <DualWish {...routeProps} />} />
               <Route render={() => <h1>ERROR PAGE NOT FOUND!!!</h1>} />
