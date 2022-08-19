@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import './WishForm.css';
 
 class WishForm extends Component {
@@ -44,4 +45,4 @@ class WishForm extends Component {
   }
 }
 
-export default WishForm;
+export default withRouter(WishForm);

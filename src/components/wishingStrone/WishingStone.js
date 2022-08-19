@@ -27,7 +27,7 @@ export class WishingStone extends Component {
     return (
       <div className='WishingStone'>
         <h1 className='WishingStone-msg'>What do you desire?...</h1>
-        <WishForm grantWish={this.grantWish} {...this.props} />
+        <WishForm grantWish={this.grantWish} />
         <div>
             {/* {grantedWish} */}
         </div>
