@@ -1,0 +1,51 @@
+.PrimateDetails{
+    width: 100%;
+    margin: 10 auto;
+    color: #ffff00;
+    /* border: 2px solid yellow; */
+}
+
+.PrimateDetails-card{
+    margin: 0 auto;
+    text-align: left;
+    background-color: #0a1a0098;
+    /* border: 2px solid yellow; */
+}
+
+.PrimateDetails-col{
+    margin: 0 auto;
+    /* border: 2px solid yellow; */
+}
+
+.PrimateDetails-navConsole{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PrimateHeader-Btn{
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 800;
+    color:#32cd32;
+    -webkit-text-fill-color: #32cd3230;
+    -webkit-text-stroke-color: #32cd32;
+    -webkit-text-stroke: 1px;
+}
+
+.PrimateHeader-Btn:hover{
+    background-color: transparent;
+    text-decoration: none;
+    -webkit-text-stroke: #ffd500;
+    -webkit-text-fill-color: #ffd50087;
+    -webkit-text-stroke-width: 1px;
+}
+
+.PrimateDetails-primateFact{
+    background-color: transparent;
+    color:#ffd50087;
+}
+

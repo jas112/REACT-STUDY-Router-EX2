@@ -11,15 +11,27 @@
 }
 
 .Primate:hover .Primate-markee{
-    width:115%;
+    -webkit-text-stroke: #ff2f00;
+    -webkit-text-fill-color: #ff2f007e;
+    -webkit-text-stroke-width: 1px;
+    transition:1.5s;
+}
+
+.Primate:hover .Primate-displayFrame{
+    box-shadow: 0px 0px 15px #ff2f00;
+    -webkit-text-stroke: #ff2f00;
+    -webkit-text-fill-color: #ff2f007e;
+    -webkit-text-stroke-width: 1px;
+    background-color: #ff2f00;
+    opacity: .9;
     transition:1.5s;
 }
 
 .Primate-display{
     width:95%;
     border-radius: 200px;
-    overflow: hidden;
     margin: 0 auto;
+    background-color: #32cd3200;
 }
 
 .Primate-displayFrame{
@@ -27,7 +39,8 @@
     height: 178px;
     border-radius: 200px;
     overflow: hidden;
-    border: 1px solid white;
+    box-shadow: 0px 0px 15px #32cd32;
+    opacity: .7;
     margin: 0 auto;
 }
 

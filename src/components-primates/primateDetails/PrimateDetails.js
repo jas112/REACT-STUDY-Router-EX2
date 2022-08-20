@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import primateData from '../../data_resources/PrimateData';
 import { v4 as uuidv4 } from 'uuid';
 import bumi from '../../images/bumi-simon-infanger.jpg';
@@ -24,9 +25,9 @@ class PrimateDetails extends Component {
     }
     generatePrimateFacts(pFacts){
         let factElements = pFacts.map(fact => (
-            <div className='PrimateDetails-primateFact' key={uuidv4()}>
+            <li className='list-group-item PrimateDetails-primateFact' key={uuidv4()}>
                 {fact}
-            </div>
+            </li>
         ));
         return factElements;
     }
@@ -41,22 +42,25 @@ class PrimateDetails extends Component {
     let primateFactElements = this.generatePrimateFacts(primateFacts);
 
     return (
-      <div>
-        <div className='PrimateDetails-imgDisplay'>
-            <img className='PrimateDetails-img' src={imageSRC} alt={imageAltOrTitle} title={imageAltOrTitle} />
-        </div>
-        <div className='PrimateDetails-primateName'>
-            {primateName}
-        </div>
-        <div className='PrimateDetails-primateAge'>
-            {primate.age}
-        </div>
-        <div className='PrimateDetails-primateFacts'>
-            {primateFactElements}
-        </div>
-        <div className='PrimateDetails-navConsole'>
-        <button className='PrimateHeader-Btn' onClick={this.props.history.goBack}>&#10094;</button>
-        <button className='PrimateHeader-Btn' onClick={this.props.history.goForward}>&#10095;</button>
+      <div className='container PrimateDetails'>
+        <div className='row PrimateDetails-row'>
+            <div className='col-11 col-lg-5 PrimateDetails-col'>
+                <div className='card PrimateDetails-card'>
+                    <img className='card-img-top PrimateDetails-img' src={imageSRC} alt={imageAltOrTitle} title={imageAltOrTitle} />
+                    <div className='card-body'>
+                        <h2 className='card-title PrimateDetails-title'>{primateName}</h2>
+                        <h4 className='card-subtitle text-muted PrimateDetails-subTitle'>{primate.age} years old</h4>
+                    </div>
+                    <ul className='list-group list-group-flush'>
+                        {primateFactElements}
+                    </ul>
+                    <div className='card-body PrimateDetails-navConsole'>
+                        <button className='btn btn-info PrimateHeader-Btn' onClick={this.props.history.goBack}>&#10094;</button>
+                        <Link className='btn btn-info PrimateHeader-Btn' to='/'>BACK TO INDEX</Link>
+                        <button className='btn btn-info PrimateHeader-Btn' onClick={this.props.history.goForward}>&#10095;</button>
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
     )
