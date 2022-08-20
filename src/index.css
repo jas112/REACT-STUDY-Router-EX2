@@ -7,10 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #181818;
   color: #ffffff;
-  background-image: url('https://images.unsplash.com/photo-1571130961480-f07e81037c71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80');
+  background-image: url('https://images.unsplash.com/photo-1577209299418-485f60c0d4de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1069&q=80');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 110% auto;
+  background-size: 100% 300vh;
 
 }
 

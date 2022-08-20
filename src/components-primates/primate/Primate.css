@@ -2,29 +2,29 @@
  width:200px;
  max-width: 100%;
  margin:10px auto;
- transition:1.5s;
+ transition:1.0s;
 }
 
 .Primate:hover .Primate-img{
     width:115%;
-    transition:1.5s;
+    transition:1.0s;
 }
 
 .Primate:hover .Primate-markee{
-    -webkit-text-stroke: #ff2f00;
-    -webkit-text-fill-color: #ff2f007e;
+    -webkit-text-stroke: #ffd500;
+    -webkit-text-fill-color: #ffd5007e;
     -webkit-text-stroke-width: 1px;
-    transition:1.5s;
+    transition:1.0s;
 }
 
 .Primate:hover .Primate-displayFrame{
-    box-shadow: 0px 0px 15px #ff2f00;
-    -webkit-text-stroke: #ff2f00;
-    -webkit-text-fill-color: #ff2f007e;
+    box-shadow: 0px 0px 15px #ffd500;
+    -webkit-text-stroke: #ffd500;
+    -webkit-text-fill-color: #ffd5007e;
     -webkit-text-stroke-width: 1px;
-    background-color: #ff2f00;
+    background-color: #ffd500;
     opacity: .9;
-    transition:1.5s;
+    transition:1.0s;
 }
 
 .Primate-display{

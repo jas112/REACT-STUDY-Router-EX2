@@ -1,4 +1,5 @@
 .PrimateDetails{
+    padding: 20px 0;
     width: 100%;
     margin: 10 auto;
     color: #ffff00;
@@ -8,7 +9,7 @@
 .PrimateDetails-card{
     margin: 0 auto;
     text-align: left;
-    background-color: #0a1a0098;
+    background-color: #07101290;
     /* border: 2px solid yellow; */
 }
 
@@ -46,6 +47,14 @@
 
 .PrimateDetails-primateFact{
     background-color: transparent;
+    color:#ffd50087;
+}
+
+.PrimateDetails-title{
+    color:#ffd500;
+}
+
+.PrimateDetails-subTitle{
     color:#ffd50087;
 }
 

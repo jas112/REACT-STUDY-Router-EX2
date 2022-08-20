@@ -55,9 +55,9 @@ class PrimateDetails extends Component {
                         {primateFactElements}
                     </ul>
                     <div className='card-body PrimateDetails-navConsole'>
-                        <button className='btn btn-info PrimateHeader-Btn' onClick={this.props.history.goBack}>&#10094;</button>
-                        <Link className='btn btn-info PrimateHeader-Btn' to='/'>BACK TO INDEX</Link>
-                        <button className='btn btn-info PrimateHeader-Btn' onClick={this.props.history.goForward}>&#10095;</button>
+                        <button className='btn PrimateHeader-Btn' onClick={this.props.history.goBack}>&#10094;</button>
+                        <Link className='btn PrimateHeader-Btn' to='/'>BACK TO INDEX</Link>
+                        <button className='btn PrimateHeader-Btn' onClick={this.props.history.goForward}>&#10095;</button>
                     </div>
                 </div>
             </div>

@@ -1,28 +1,34 @@
 .PrimateHeader-navBG{
-    background-color: #0a1a00db;
+    background-color: #07101290;
 }
 
 .PrimateHeader-link{
     text-decoration: none;
-    font-size: 24px;
-    font-weight: 800;
-    -webkit-text-stroke: #32cd32;
+    font-size: 14px;
+    font-weight: 500;
+    color: #32cd32;
+    text-shadow: 0px 0px 9px #32cd32;
+    /* -webkit-text-stroke: #32cd32;
     -webkit-text-fill-color: #32cd328f;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1px; */
      
 }
 
 .PrimateHeader-link:hover{
-    -webkit-text-stroke: #ff2f00;
+    color: #ff2f00;
+    text-shadow: 0px 0px 9px #ff2f00;
+    /* -webkit-text-stroke: #ff2f00;
     -webkit-text-fill-color: #ff2f007e;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1px; */
       
  }
 
 .PrimateHeader-linkActive{
     text-decoration: none;
-    -webkit-text-stroke: #ffd500;
+    color: #ffd500;
+    text-shadow: 0px 0px 9px #ffd500;
+    /* -webkit-text-stroke: #ffd500;
     -webkit-text-fill-color: #ffd50087;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1px; */
 
 }

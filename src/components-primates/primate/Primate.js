@@ -36,7 +36,7 @@ class Primate extends Component {
 
     let imageSRC = this.props.imageFiles[this.props.primate.image_file];
     console.log(`${this.props.primate.image_file}`);
-    let imageAltOrTitle = `Photo by ${this.props.primate.image_src}`;
+    let imageAltOrTitle = `Photo by ${this.props.primate.image_src} on unsplash.com`;
     let primateMarkee = this.props.primate.name;
     let primateIdx = this.props.idx;
 
