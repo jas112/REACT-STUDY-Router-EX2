@@ -6,7 +6,7 @@ class PrimateHome extends Component {
   render() {
     return (
       <div>
-        <PrimateList />
+        <PrimateList primateData={this.props.primateData} />
       </div>
     )
   }

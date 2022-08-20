@@ -1,9 +1,10 @@
+
 const primateData = {
     primates: [
         {
             name: "Bumi",
             age: 30,
-            image_file: 'bumi-simon-infanger.jpg',
+            image_file: 'bumi',
             image_src: 'Simon Infanger',
             facts: [
               "Bumi loves eating pineapple.",
@@ -14,7 +15,7 @@ const primateData = {
           {
             name: "CooCoo",
             age: 7,
-            image_file: 'coocoo-dmitriy-zub.jpg',
+            image_file: 'coocoo',
             image_src: 'Dmitriy Zub',
             facts: [
               "CooCoo has soooo much energy!",
@@ -25,7 +26,7 @@ const primateData = {
           {
             name: "Crumley",
             age: 10,
-            image_file: 'crumley-chris-curry.jpg',
+            image_file: 'crumley',
             image_src: 'Chris Curry',
             facts: [
               "Crumley is not the brightest of the bunch.",
@@ -36,7 +37,7 @@ const primateData = {
           {
             name: "Genda",
             age: 26,
-            image_file: 'genda-rob-schreckhise.jpg',
+            image_file: 'genda',
             image_src: 'Rob Schreckhise',
             facts: [
               "Genda is sweet and gentle.",
@@ -47,7 +48,7 @@ const primateData = {
           {
             name: "Gobo",
             age: 40,
-            image_file: 'gobo-curt-chappman.jpg',
+            image_file: 'gobo',
             image_src: 'Curt Chappman',
             facts: [
               "Gobo is the leader of the family.",
@@ -58,7 +59,7 @@ const primateData = {
           {
             name: "Peanut",
             age: 32,
-            image_file: 'peanut-jeremy-bezanger.jpg',
+            image_file: 'peanut',
             image_src: 'Jeremy Bezanger',
             facts: [
               "Peanut is the most playful",
@@ -69,7 +70,7 @@ const primateData = {
           {
             name: "Tengu",
             age: 37,
-            image_file: 'tengu-carlos-cram.jpg',
+            image_file: 'tengu',
             image_src: 'Carlos Cram',
             facts: [
               "Tengu is great protector.",

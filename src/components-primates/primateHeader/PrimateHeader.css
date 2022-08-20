@@ -1,0 +1,28 @@
+.PrimateHeader-navBG{
+    background-color: #0a1a00db;
+}
+
+.PrimateHeader-link{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 800;
+    -webkit-text-stroke: #32cd32;
+    -webkit-text-fill-color: #32cd328f;
+    -webkit-text-stroke-width: 1px;
+     
+}
+
+.PrimateHeader-link:hover{
+    -webkit-text-stroke: #ff2f00;
+    -webkit-text-fill-color: #ff2f007e;
+    -webkit-text-stroke-width: 1px;
+      
+ }
+
+.PrimateHeader-linkActive{
+    text-decoration: none;
+    -webkit-text-stroke: #ffd500;
+    -webkit-text-fill-color: #ffd50087;
+    -webkit-text-stroke-width: 1px;
+
+}

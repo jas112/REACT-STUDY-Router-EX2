@@ -1,0 +1,50 @@
+.Primate{
+ width:200px;
+ max-width: 100%;
+ margin:10px auto;
+ transition:1.5s;
+}
+
+.Primate:hover .Primate-img{
+    width:115%;
+    transition:1.5s;
+}
+
+.Primate:hover .Primate-markee{
+    width:115%;
+    transition:1.5s;
+}
+
+.Primate-display{
+    width:95%;
+    border-radius: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.Primate-displayFrame{
+    width:178px;
+    height: 178px;
+    border-radius: 200px;
+    overflow: hidden;
+    border: 1px solid white;
+    margin: 0 auto;
+}
+
+.Primate-img{
+    width:100%;
+    height: auto;
+}
+
+.Primate-markee{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 800;
+    -webkit-text-stroke: #32cd32;
+    -webkit-text-fill-color: #32cd328f;
+    -webkit-text-stroke-width: 1px; 
+}
+
+.Primate-link{
+    text-decoration: none;
+}

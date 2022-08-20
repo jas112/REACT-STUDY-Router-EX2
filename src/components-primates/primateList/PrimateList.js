@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import Primate from '../primate/Primate';
-import primateData from '../../data_resources/PrimateData';
+import { v4 as uuidv4 } from 'uuid';
 import './PrimateList.css';
 
 class PrimateList extends Component {
 
     generatePrimateList(){
-        let currentPrimateData = primateData.primates;
+
+        let currentPrimateData = this.props.primateData;
 
         let primateListElements = currentPrimateData.map((primate, idx) => (
-            <Primate primate={primate} idx={idx} />
+            <div className='col-4 text-center' key={uuidv4()}>
+                <Primate primate={primate} idx={idx} />
+            </div> 
         ));
 
         return primateListElements;
@@ -21,7 +24,11 @@ class PrimateList extends Component {
 
     return (
       <div className='PrimateList'>
-        {primates}
+        <div className='container'>
+            <div className='row PrimateList-rowHeight'>
+                {primates}
+            </div>
+        </div>
       </div>
     )
   }

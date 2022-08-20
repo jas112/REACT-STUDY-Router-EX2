@@ -2,8 +2,8 @@ import { Route, Switch } from 'react-router-dom';
 import PrimateHeader from './components-primates/primateHeader/PrimateHeader';
 import PrimateHome from './components-primates/primateHome/PrimateHome';
 import PrimateDetails from './components-primates/primateDetails/PrimateDetails';
-import primateData from './data_resources/PrimateData';
 import './App.css';
+import primateData from './data_resources/PrimateData';
 
 // import Header from './components/header/Header';
 // import Home from './components/home/Home';
@@ -31,7 +31,7 @@ function App() {
 
           {/* Primate Support Exercise...BEGIN */}
           {/* <div className='display-1'>PrimateSupport</div> */}
-          <PrimateHeader />
+          <PrimateHeader primateData={primateData.primates} />
           <div className='container-primateSupport'>
           <Switch>
             <Route exact path='/' render={() => <PrimateHome primateData={primateData.primates} />} />
