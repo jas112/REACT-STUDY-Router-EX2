@@ -24,7 +24,7 @@ class PrimateHeader extends Component {
                 {/* <a class="navbar-brand" href="#">Primate Support</a> */}
                 <NavLink exact className='PrimateHeader-link navbar-brand' activeClassName='PrimateHeader-linkActive' to='/'>Primate Support</NavLink>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon PrimateHeader-toggler"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">

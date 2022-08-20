@@ -5,12 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #181818;
+  background: linear-gradient(#071012,#06090a);
+  background-repeat: no-repeat;
+  background-color: #06090a;
+  background-size:  1000% 100vh;
   color: #ffffff;
-  background-image: url('https://images.unsplash.com/photo-1577209299418-485f60c0d4de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1069&q=80');
+  /* background-image: url('https://images.unsplash.com/photo-1577209299418-485f60c0d4de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1069&q=80');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 300vh;
+  background-size: 100% 300vh; */
 
 }
 

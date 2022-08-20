@@ -41,7 +41,7 @@ class Primate extends Component {
     let primateIdx = this.props.idx;
 
     return (
-      <div className='Primate' onClick={this.handleClick}>
+      <div className='col-lg-4 text-center Primate' onClick={this.handleClick}>
         <Link className='Primate-link' to={`/primateDetails/${primateMarkee}/${primateIdx}`}>
         <div className='Primate-display'>
             <div className='Primate-displayFrame'>
