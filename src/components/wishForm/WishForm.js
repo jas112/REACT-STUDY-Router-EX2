@@ -37,7 +37,7 @@ class WishForm extends Component {
         <h1>Wishing for... {this.state.wish}</h1>
         <form onSubmit={this.handleSubmit}>
             <input type='text' id='wish' name='wish' value={this.state.wish} onChange={this.handleChange} className='WishForm-wishInput' placeholder='Enter your desire here...' />
-            <button type='submit' className='WishForm-btn' >CLICK TO GRANT WISH</button>
+            <button type='submit' className='WishForm-btn'>CLICK TO GRANT WISH</button>
             {/* <Link className='WishForm-link' to={`/wish/${this.state.wish}`}>CLICK TO GRANT WISH</Link> */}
         </form>
       </div>
