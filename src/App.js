@@ -1,8 +1,8 @@
 import { Route, Switch } from 'react-router-dom';
 import PrimateHeader from './components-primates/primateHeader/PrimateHeader';
 import PrimateHome from './components-primates/primateHome/PrimateHome';
-import PrimateList from './components-primates/primateList/PrimateList';
-import Primate from './components-primates/primate/Primate';
+import PrimateDetails from './components-primates/primateDetails/PrimateDetails';
+import primateData from './data_resources/PrimateData';
 import './App.css';
 
 // import Header from './components/header/Header';
@@ -34,9 +34,8 @@ function App() {
           <PrimateHeader />
           <div className='container-primateSupport'>
           <Switch>
-            <Route exact path='/' render={() => <PrimateHome />} />
-            <Route exact path='/primateList' render={() => <PrimateList />} />
-            <Route exact path='/primate/:primate' render={routeProps => <Primate {...routeProps} />} />
+            <Route exact path='/' render={() => <PrimateHome primateData={primateData.primates} />} />
+            <Route exact path='/primateDetails/:primate/:idx' render={routeProps => <PrimateDetails {...routeProps} />} />
             <Route render={() => <h1>ERROR PAGE NOT FOUND!!!</h1>} />
           </Switch>
           </div>
